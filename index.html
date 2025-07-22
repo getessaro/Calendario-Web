@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Calendário Web Moderno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">&lt;</button>
+            <h2 id="currentMonthYear"></h2>
+            <button id="nextMonth">&gt;</button>
+        </div>
+        <div class="calendar-weekdays">
+            <span>Dom</span>
+            <span>Seg</span>
+            <span>Ter</span>
+            <span>Qua</span>
+            <span>Qui</span>
+            <span>Sex</span>
+            <span>Sáb</span> 
+        </div>
+        <div class="calendar-days" id="calendarDays">
+            </div>
+    </div>
+
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="noteDateDisplay"></h3>
+            <textarea id="noteInput" placeholder="Digite sua anotação aqui..."></textarea>
+            <div id="existingNotesDisplay" class="modal-notes-display">
+                </div>
+            <button id="saveNoteBtn">Salvar Anotação</button>
+            <button id="deleteNoteBtn" style="display: none; margin-left: 10px; background-color: #dc3545;">Excluir Anotação</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
